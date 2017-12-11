@@ -23,16 +23,15 @@
 			function showMailingPopUp() {
     			require(["mojo/signup-forms/Loader"], function(L) {
 					L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"bda409982baf88089d28341d0","lid":"e5b967f357"}); });
-    			document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    			document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 				document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
-				document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
 			}
 		</script>
 
 		<p align="right">
 			<br/>
 			<a href="https://cloud.blackcombnetworks.com" class="button scrolly">Customer Login</a></li>
-			<button id="open-popup">Sign Up for Product Demo</button>
+			<button onclick="showMailingPopUp();">Sign Up for Product Demo</button>
 		</p>
 
 		<!-- Header -->
