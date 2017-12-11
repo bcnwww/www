@@ -5,6 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 	<head>
 		<title>Blackcomb Networks</title>
 		<meta charset="utf-8" />
@@ -13,14 +14,30 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+<script type="text/javascript" src="http://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script>
+function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"bda409982baf88089d28341d0","lid":"e5b967f357"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+}
+</script>
 	</head>
+
 	<body>
+
+		<p align="right">
+			<br/>
+			<a href="https://cloud.blackcombnetworks.com" class="button scrolly">Customer Login</a></li>
+			<button onclick="showMailingPopUp()">Sign Up for Product Demo</button>
+		</p>
 
 		<!-- Header -->
 			<section id="header">
 				<div class="inner">
 					<span class="icon major fa-cloud"></span>
-					<h1><strong>Blackcomb Networks</strong> is in stealth!<br />
+					<h1><strong>Blackcomb Networks</strong> is in sstealth!<br />
 					</h1>
 					<p>Redefining Enterprise Network Security at fundamental levels<br />
 					</p>
@@ -40,6 +57,7 @@
 				</div>
 			-->
 			</section>
+
 
 		<!-- Footer -->
 			<section id="footer">
