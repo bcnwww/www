@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<script type="text/javascript" src="https://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+		<script type="text/javascript">
+			function showMailingPopUp() {
+    			require(["mojo/signup-forms/Loader"], function(L) {
+					L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"bda409982baf88089d28341d0","lid":"e5b967f357"}); });
+    			document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+				document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+			}
+		</script>
+
+		<h2>This works!</h2>
+		<p align="right">
+			<br/>
+			<a href="https://cloud.blackcombnetworks.com" class="button scrolly">Customer Login</a></li>
+			<button onclick="showMailingPopUp();">Sign Up for Product Demo</button>
+		</p>
+
+	</body>
+</html>
